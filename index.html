@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="d-flex flex-column vh-100">
+    <header class="d-flex flex-column">
         <section style="background-color: var(--header-section-background);">
             <div class="container">
                 <div class="d-flex justify-content-between" style="padding: 16px 0">
@@ -44,8 +44,8 @@
                             <span class="text-black fw-normal font-primary fs-14" style="margin-left: 14px;">Support@concetti-di-lusso.com</span>
                         </a>
                     </div>
-                    <span class="fw-semibold font-primary fs-18" style="color: var(--primary-color);">FREE SHIPPING! Orders $35+</span>
-                    <a href="https://maps.app.goo.gl/6LkXnMMVQ6xardTQ9" target="_blank" class="d-flex align-items-center">
+                    <span class="fw-semibold font-primary fs-18 d-none d-lg-inline-block" style="color: var(--primary-color);">FREE SHIPPING! Orders $35+</span>
+                    <a href="https://maps.app.goo.gl/6LkXnMMVQ6xardTQ9" target="_blank" class="d-none d-lg-flex align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
                             <path
                                 d="M6.75 0C10.4726 0 13.5 3.02737 13.5 6.75C13.5 11.4289 7.407 17.5759 7.14825 17.8358C7.038 17.9449 6.894 18 6.75 18C6.606 18 6.462 17.9449 6.35175 17.8358C6.093 17.5759 0 11.4289 0 6.75C0 3.02737 3.02738 0 6.75 0ZM6.75 16.6241C8.09325 15.1864 12.375 10.3241 12.375 6.75C12.375 3.64838 9.85162 1.125 6.75 1.125C3.64837 1.125 1.125 3.64838 1.125 6.75C1.125 10.3208 5.40675 15.1864 6.75 16.6241Z"
@@ -63,10 +63,10 @@
             <div class="container">
                 <nav class="d-flex justify-content-between align-items-center" style="padding: 30px 0;">
                     <h1 class="fw-semibold font-primary fs-30">CONCETTI DI-LUSSO</h1>
-                    <div class="menu d-flex align-items-center">
+                    <div class="menu d-none align-items-center">
                         <a href="#" class="fw-normal font-primary fs-18">Home</a>
                         <div class="dropdown">
-                            <a href="#" style="margin-left: var(--nav-mid-margin-left);" class="fw-normal font-primary fs-18">Towels <svg xmlns="http://www.w3.org/2000/svg" width="12"
+                            <a href="#" style="margin-left: var(--nav-mid-margin-left);" class="fw-normal font-primary fs-18">Towels <svg class="svg-arrow-down d-none" xmlns="http://www.w3.org/2000/svg" width="12"
                                     height="7" viewBox="0 0 12 7" fill="none">
                                     <path d="M1.5 1L6 5.5L10.5 1" stroke="#686868" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -80,7 +80,7 @@
                         <a href="#" style="margin-left: var(--nav-mid-margin-left);" class="fw-normal font-primary fs-18">Robes</a>
                         <a href="#" style="margin-left: var(--nav-mid-margin-left);" class="fw-normal font-primary fs-18">Bathroom Sets</a>
                     </div>
-                    <div class="icons d-flex">
+                    <div class="icons d-flex align-items-center">
                         <div class="icon-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
                                 fill="none">
@@ -111,7 +111,8 @@
                                     fill="#232323" />
                             </svg>
                         </div>
-                        <button class="nav-button text-white font-primary fw-semibold fs-18" style="margin-left: var(--nav-button-margin);">SIGN
+                        <label id="label" style="margin-left: var(--nav-icon-margin);"><span></span></label>
+                        <button class="nav-button d-none text-white font-primary fw-semibold fs-18" style="margin-left: var(--nav-button-margin);">SIGN
                             IN</button>
                     </div>
                 </nav>
@@ -360,10 +361,10 @@
                     </div>
                     <div class="col-7">
                         <img src="./assets/images/beautiful-towels-on-chair.png" alt="beautiful-towels-on-chair"
-                            class="w-100" style="border-radius: 30px;">
+                            class="w-100 h-100" style="border-radius: 30px;">
                     </div>
                 </div>
-                <h2 class="text-center font-primary fw-semibold fs-36 color-primary">Trending Product</h2>
+                <h2 class="text-center font-primary fw-semibold fs-36 color-primary" style="margin-top: 90px;">Trending Product</h2>
                 <div class="row" style="margin-top: 40px;">
                     <div class="col-4">
                         <div class="trending-card">
