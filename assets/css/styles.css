@@ -40,6 +40,10 @@
     flex-direction: column;
 }
 
+.icons .icon-box{
+    display: none;
+}
+
 * {
     text-decoration: none !important;
     list-style-type: none !important;
@@ -65,12 +69,24 @@ h1 {
     cursor: pointer;
 }
 
+input:focus{
+    outline: none;
+}
+
 .nav-button-2 {
     padding: 10px 32px;
     background-color: var(--primary-color);
     border-radius: 5px;
     border-color: transparent;
     box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
+    transition: all 300ms linear;
+    color: white;
+}
+
+.nav-button-2:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .nav-button-1 {
@@ -117,9 +133,22 @@ header main {
 }
 
 .featured-button {
-    padding: 8px 31px;
+    padding: 8px 25px;
     border-radius: 5px;
     background-color: #232323;
+    color: white;
+    border-color: transparent;
+    transition: all 300ms linear;
+}
+
+.featured-button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.featured-button:hover svg>path {
+    fill: var(--primary-color);
 }
 
 .section-card {
@@ -133,6 +162,14 @@ header main {
     background-color: var(--primary-color);
     border-radius: 5px;
     border-color: transparent;
+    color: white;
+    transition: all 300ms linear;
+}
+
+.section-button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .trending-card {
@@ -149,6 +186,14 @@ header main {
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
     border-color: transparent;
+    color: white;
+    transition: all 300ms linear;
+}
+
+.subscribe-button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .footer-card {
@@ -234,6 +279,10 @@ header main {
     font-size: 36px;
 }
 
+.fs-58{
+    font-size: 58px;
+}
+
 .fs-64 {
     font-size: 64px;
 }
@@ -241,6 +290,12 @@ header main {
 .menu a {
     color: #686868;
     ;
+}
+
+.text-on-image{
+    position: absolute;
+    top: 15%;
+    color: white;
 }
 
 .menu a:hover {
@@ -319,15 +374,23 @@ label>span::after {
 }
 
 @media (min-width: 576px) {
-    :root{
+    :root {
         --space-between-sections: 60px;
     }
 
-    .svg-comma-1{
+    .icons .icon-box{
+        display: block;
+    }
+
+        .hidden-icons .icon-box {
+            display: none;
+        }
+
+    .svg-comma-1 {
         display: inline-block;
     }
 
-    .svg-comma-2{
+    .svg-comma-2 {
         display: inline-block;
     }
 
@@ -367,16 +430,26 @@ label>span::after {
         --space-between-sections: 90px;
     }
 
-    .dropdown-content{
+    .d-grid div {
+        transition: all 300ms linear;
+    }
+
+    .d-grid div:hover {
+        position: relative;
+        z-index: 2;
+        transform: scale(1.2);
+    }
+
+    .dropdown-content {
         background-color: #f1f1f1;
-            backdrop-filter: none;
+        backdrop-filter: none;
     }
 
     .nav-button-1 {
         display: none !important;
     }
 
-    .footer-card{
+    .footer-card {
         padding: 70px 70px 30px 70px;
     }
 
@@ -423,7 +496,7 @@ label>span::after {
         --nav-mid-margin-left: 42px;
     }
 
-    .footer-card{
+    .footer-card {
         padding: 90px 100px 40px 100px;
     }
 
